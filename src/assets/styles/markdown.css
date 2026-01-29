@@ -1,0 +1,104 @@
+@layer markdown {
+  :root {
+    --shiki-color-text: hsl(0deg 0% 83%);
+    --shiki-color-background: hsl(235deg 19% 13%);
+    --shiki-token-constant: hsl(145deg 46% 51%);
+    --shiki-token-string: hsl(40deg 67% 51%);
+    --shiki-token-comment: hsl(229deg 23% 44%);
+    --shiki-token-keyword: hsl(259deg 59% 59%);
+    --shiki-token-parameter: hsl(0deg 100% 33%);
+    --shiki-token-function: hsl(266deg 59% 70%);
+    --shiki-token-string-expression: hsl(190deg 91% 48%);
+    --shiki-token-punctuation: hsl(0deg 0% 83%);
+    --shiki-token-link: hsl(0deg 100% 47%);
+    --shiki-highlited-line: hsl(258deg 50% 52% / 40%);
+  }
+
+  .shiki {
+    position: relative;
+    border-radius: var(--radius-default);
+    padding: 0.875rem;
+    overflow-x: auto;
+
+    *::selection {
+      background: hsl(0deg 0% 0% / 30%);
+    }
+
+    & code {
+      counter-reset: step;
+      counter-increment: step 0;
+    }
+
+    & span {
+      font-family: var(--font-mono);
+    }
+
+    & .line:empty {
+      display: none;
+    }
+
+    & .line.highlighted {
+      display: inline-block;
+      background: var(--shiki-highlited-line);
+      width: 100%;
+      border-radius: var(--radius-default);
+    }
+
+    & code:has(.line:nth-child(3n)) .line::before {
+      display: inline-block;
+      width: 10px;
+      content: counter(step);
+      counter-increment: step;
+      color: hsl(0deg 0% 60%);
+      margin-inline-end: 1.5rem;
+    }
+
+    &::-webkit-scrollbar {
+      width: 1em;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: var(--scrollbar-bg);
+      box-shadow: inset 0 0 6px rgb(0 0 0 / 50%);
+      border-radius: 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: var(--scrollbar-thumb-color);
+      border: 5px solid var(--scrollbar-border);
+    }
+
+    & .copy-to-clipboard {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      opacity: 0.4;
+      border: 1px solid var(--color-silver);
+      border-radius: var(--radius-default);
+      padding: 0.25rem;
+      transition: opacity 400ms ease-out, scale 600ms ease-in;
+    }
+
+    & .copy-to-clipboard:active {
+      scale: 0.4;
+    }
+
+    & .copy-to-clipboard:hover {
+      opacity: 0.8;
+    }
+
+    & .copy-to-clipboard svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    & code:not(:has(.line:nth-child(3n)))+.copy-to-clipboard {
+      top: 10px;
+    }
+  }
+}

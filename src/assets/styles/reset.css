@@ -1,0 +1,113 @@
+/* stylelint-disable declaration-no-important */
+@layer reset {
+
+  /* Box sizing rules */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /* Remove default padding */
+  ul,
+  ol {
+    padding: 0;
+  }
+
+  /* Remove default margin */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  ul[class],
+  ol[class],
+  li,
+  figure,
+  figcaption,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+
+  html,
+  body {
+    min-height: 100%;
+  }
+
+  #app {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+
+  /* Make medias easier to work with */
+  img,
+  picture,
+  video,
+  canvas,
+  svg,
+  iframe,
+  object {
+    max-width: 100%;
+    display: block;
+  }
+
+  /* Natural flow and rhythm in articles by default */
+  article>*+* {
+    margin-block-start: 1em;
+  }
+
+  /* Avoid text overflows */
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+
+  /* Inherit fonts for inputs and buttons */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  button {
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto;
+  }
+}
+
+/* Reduce transparency to all applicable elements */
+@media screen and (prefers-reduced-transparency: reduce) {
+  * {
+    backdrop-filter: unset;
+  }
+}

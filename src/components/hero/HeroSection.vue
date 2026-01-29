@@ -21,7 +21,7 @@
       <h2 class="hero__subheadline">software engineer</h2>
       <HeroAvatar>
         <img
-src="@/assets/img/profile.jpg" alt="me" class="hero-avatar__image" width="140" height="140"
+src="@/assets/img/profile.JPG" alt="me" class="hero-avatar__image" width="140" height="140"
           loading="lazy" />
       </HeroAvatar>
     </aside>

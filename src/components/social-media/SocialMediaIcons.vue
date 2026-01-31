@@ -29,12 +29,27 @@ is-external to="https://leetcode.com/u/avinashs1995/" aria-label="My Leetcode pr
       <!-- Simple LeetCode Icon -->
       <img :src="leetcodeImg" alt="LeetCode" class="social-icon-img" />
     </AppLink>
+    <AppLink
+      is-external :to="resumePdf"
+      variant="button"
+      class="resume-btn"
+      aria-label="View Resume"
+      title="View Resume"
+    >
+      <span class="btn-content">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+          <path d="M5 20H19V18H5V20ZM19 9H15V3H9V9H5L12 16L19 9Z" />
+        </svg>
+        <span>View Resume</span>
+      </span>
+    </AppLink>
   </div>
 </template>
 
 <script setup>
 import { computed } from 'vue'
 import leetcodeImg from '@/assets/img/leetcode.png'
+import resumePdf from '@/assets/docs/saxena_avinash_resume.pdf'
 
 const props = defineProps({
   boxed: {
@@ -91,8 +106,51 @@ const classes = computed(() => ({
   }
 }
 
+.resume-btn {
+  /* Override AppLink button variables with custom theme color */
+  --button-bg-color: rgb(231, 131, 54);
+  --button-text-color: #ffffff;
+
+  /* Ensure button styling takes precedence and looks good */
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  
+  /* Force colors to ensure readability in both themes */
+  background-color: var(--button-bg-color) !important;
+  color: var(--button-text-color) !important;
+  border: 1px solid transparent; 
+  
+  .btn-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    /* Ensure text readability */
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Force Icon color to match text color (white), overriding default theme hacks */
+  & svg, 
+  & svg path {
+      fill: var(--button-text-color) !important;
+  }
+}
+
+/* Override hover behavior to ensure icon stays white */
+.social-media-icons .resume-btn:hover svg,
+.social-media-icons .resume-btn:hover svg path {
+  fill: var(--button-text-color) !important;
+}
+
 body[data-theme='light'] {
-  .social-media-icons a {
+  .social-media-icons a:not(.resume-btn) {
 
     svg,
     svg path {

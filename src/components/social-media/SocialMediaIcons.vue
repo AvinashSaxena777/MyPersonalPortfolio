@@ -49,7 +49,7 @@ is-external to="https://leetcode.com/u/avinashs1995/" aria-label="My Leetcode pr
 <script setup>
 import { computed } from 'vue'
 import leetcodeImg from '@/assets/img/leetcode.png'
-import resumePdf from '@/assets/docs/saxena_avinash_resume.pdf'
+const resumePdf = 'https://drive.google.com/file/d/1tcsaKL8sbcMqgNgCI9Z1HTrtuMSjj9QA/view?usp=sharing'
 
 const props = defineProps({
   boxed: {

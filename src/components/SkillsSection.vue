@@ -116,6 +116,7 @@
 import javaImg from '@/assets/img/java.png'
 import genAiImg from '@/assets/img/ai.png'
 import awsImg from '@/assets/img/aws.png'
+import salesforceImg from '@/assets/img/salesforce.png'
 
 const skills = {
   software: [
@@ -138,13 +139,13 @@ const skills = {
     { name: 'Scikit-learn', slug: 'scikitlearn' },
     { name: 'NLP', slug: 'huggingface' },
     { name: 'Recommender', slug: 'pandas' },
-    { name: 'SageMaker', slug: 'amazon' }
+    { name: 'SageMaker', image: awsImg }
   ],
   salesforce: [
-    { name: 'Apex', slug: 'salesforce' },
+    { name: 'Apex', image: salesforceImg },
     { name: 'LWC', slug: 'javascript' },
     { name: 'SOQL', slug: 'databricks' },
-    { name: 'Async Apex', slug: 'salesforce' }
+    { name: 'Async Apex', image: salesforceImg }
   ],
   cloud: [
     { name: 'AWS', image: awsImg },

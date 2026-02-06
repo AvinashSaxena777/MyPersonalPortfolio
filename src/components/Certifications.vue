@@ -22,7 +22,7 @@
              <span class="cert-issuer">Salesforce Certified</span>
              <h4 class="cert-name">{{ cert.name }}</h4>
           </div>
-          <a href="#" class="verify-btn" target="_blank" rel="noopener noreferrer">
+          <a :href="cert.link" class="verify-btn" target="_blank" rel="noopener noreferrer">
             <span>Verify</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
@@ -37,12 +37,12 @@
 
 <script setup>
 const certifications = [
-  { name: 'Sales Cloud Consultant' },
-  { name: 'CPQ Specialist' },
-  { name: 'Platform Developer II' },
-  { name: 'Revenue Cloud Consultant' },
-  { name: 'Platform Developer I' },
-  { name: 'Administrator' },
+  { name: 'CPQ and Billing Consultant Accredited Professional', link: 'https://www.credly.com/go/0Ptn4HGj' },
+  { name: 'Platform Developer II', link: 'https://sforce.co/verifycerts' },
+  { name: 'CPQ Specialist', link: 'https://sforce.co/verifycerts' },
+  { name: 'Sales Cloud Consultant', link: 'https://sforce.co/verifycerts' },  
+  { name: 'Platform Developer I', link: 'https://sforce.co/verifycerts' },
+  { name: 'Administrator', link: 'https://sforce.co/verifycerts' },
 ]
 </script>
 
@@ -83,7 +83,7 @@ const certifications = [
 /* Ticket Design */
 .cert-ticket {
   display: flex;
-  height: 100px;
+  min-height: 100px;
   filter: drop-shadow(var(--elevation-2));
   transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -144,6 +144,7 @@ const certifications = [
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
   position: relative;
   border: 1px solid var(--border-color);
   border-left: none;
@@ -153,6 +154,7 @@ const certifications = [
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  flex: 1;
 }
 
 .cert-issuer {
@@ -183,6 +185,7 @@ const certifications = [
   font-size: var(--text-xs);
   font-weight: var(--fw-bold);
   transition: all 0.2s ease;
+  flex-shrink: 0;
   
   svg {
     width: 14px;

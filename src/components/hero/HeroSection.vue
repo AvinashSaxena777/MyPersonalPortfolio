@@ -10,7 +10,7 @@
         San Jose, CA
       </div>
       <p class="hero__description">
-        Software Engineer with 3+ years of experience building scalable backend systems and Salesforce integrations. M.S. in AI with expertise in GenAI and data-driven automation.
+        Software Engineer with 4+ years of experience specializing in high-scale backend services and distributed data pipelines. Expertise in Java, C++, and Python to architect low-latency APIs and privacy-centric systems.
         <br>
         <span class="seeking-roles">🚀 Actively seeking full-time SWE / ML roles in the US (Available Immediately).</span>
       </p>
@@ -21,7 +21,7 @@
       <h2 class="hero__subheadline">software engineer</h2>
       <HeroAvatar>
         <img
-src="@/assets/img/profile.JPG" alt="me" class="hero-avatar__image" width="140" height="140"
+src="@/assets/img/profile.jpg" alt="me" class="hero-avatar__image" width="140" height="140"
           loading="lazy" />
       </HeroAvatar>
     </aside>

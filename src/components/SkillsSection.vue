@@ -120,43 +120,57 @@ import salesforceImg from '@/assets/img/salesforce.png'
 
 const skills = {
   software: [
+    { name: 'Data Pipelines', slug: 'apacheairflow' },
+    { name: 'Microservices', slug: 'fastapi' },
+    { name: 'Go', slug: 'go' },
+    { name: 'C++', slug: 'cplusplus' },
     { name: 'Java', image: javaImg },
     { name: 'Python', slug: 'python' },
+    { name: 'Scala', slug: 'scala' },
+    { name: 'PostgreSQL', slug: 'postgresql' },
+    { name: 'Apache Kafka', slug: 'apachekafka' },
+    { name: 'Spark', slug: 'apachespark' },
+    { name: 'Flink', slug: 'apacheflink' },
+    { name: 'gRPC', slug: 'grpc' },
+    { name: 'Protobuf', slug: 'protocolbuffers' },
+    { name: 'Redis', slug: 'redis' },
+    { name: 'OpenTelemetry', slug: 'opentelemetry' },
+    { name: 'Prometheus', slug: 'prometheus' },
     { name: 'Node.js', slug: 'nodedotjs' },
     { name: 'Spring Boot', slug: 'springboot' },
     { name: 'GraphQL', slug: 'graphql' },
     { name: 'React', slug: 'react' },
-    { name: 'Kafka', slug: 'apachekafka' },
     { name: 'Hibernate', slug: 'hibernate' },
-    { name: 'Django', slug: 'django' },
-    { name: 'Agile', slug: 'jirasoftware' }
+    { name: 'Django', slug: 'django' }
   ],
   ai: [
+    { name: 'LLM Integration', slug: 'huggingface' },
     { name: 'GenAI', image: genAiImg },
     { name: 'LangChain', slug: 'langchain' },
     { name: 'TensorFlow', slug: 'tensorflow' },
     { name: 'PyTorch', slug: 'pytorch' },
     { name: 'Scikit-learn', slug: 'scikitlearn' },
     { name: 'NLP', slug: 'huggingface' },
-    { name: 'Recommender', slug: 'pandas' },
     { name: 'SageMaker', image: awsImg }
   ],
-  salesforce: [
-    { name: 'Apex', image: salesforceImg },
-    { name: 'LWC', slug: 'javascript' },
-    { name: 'SOQL', slug: 'databricks' },
-    { name: 'Async Apex', image: salesforceImg }
-  ],
   cloud: [
+    { name: 'EC2', slug: 'amazonec2' },
+    { name: 'Bazel', slug: 'bazel' },
+    { name: 'CI/CD Automation', slug: 'githubactions' },
     { name: 'AWS', image: awsImg },
     { name: 'GCP', slug: 'googlecloud' },
     { name: 'Docker', slug: 'docker' },
     { name: 'Kubernetes', slug: 'kubernetes' },
     { name: 'Jenkins', slug: 'jenkins' },
     { name: 'Git', slug: 'git' },
-    { name: 'Elastic Stack', slug: 'elasticsearch' },
     { name: 'Shell', slug: 'gnubash' },
     { name: 'SQL Tuning', slug: 'mysql' }
+  ],
+  salesforce: [
+    { name: 'Apex', image: salesforceImg },
+    { name: 'LWC', slug: 'javascript' },
+    { name: 'SOQL', slug: 'databricks' },
+    { name: 'Async Apex', image: salesforceImg }
   ]
 }
 </script>

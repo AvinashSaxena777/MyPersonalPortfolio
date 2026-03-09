@@ -41,32 +41,19 @@ import deloitteLogo from '@/assets/img/deloitte-logo.png'
 
 const experience = [
   {
-    title: 'Research Assistant',
-    company: 'San Jose State University',
-    location: 'San Jose, CA',
-    duration: 'Jan 2025 – Mar 2025',
-    logo: sjsuLogo,
-    responsibilities: [
-      'Developed Agentic AI application using LLMs and GraphQL to automate student resource retrieval, improving accessibility by 30%.',
-      'Engineered a full-stack solution with Node.js, React, and Kafka for real-time data streaming, reducing deployment errors by 40% via CI/CD.',
-      'Optimized LLM accuracy by 25% through meta-prompting and chain-of-thought reasoning with iterative feedback loops.',
-      'Implemented curriculum learning by training models on datasets of increasing complexity, boosting query generalization by 18%.',
-    ],
-    techStack: ['LLMs', 'GraphQL', 'Node.js', 'React', 'Kafka', 'CI/CD'],
-  },
-  {
-    title: 'Software Engineer - Salesforce',
+    title: 'Senior Software Engineer',
     company: "NTT Data (Client: Dave & Buster's)",
     location: 'Hyderabad, India',
     duration: 'Sep 2021 – Jan 2024',
     logo: nttLogo,
     responsibilities: [
-      'Managed a three-member team to integrate web applications with Salesforce (Sales Cloud/CPQ) using Mulesoft, increasing data synchronization speed by 30%.',
-      'Engineered custom LWC-based interfaces to streamline sales workflows, reducing development cycles by 25% and enhancing cross-functional collaboration.',
-      'Led change management and impact assessment for critical system updates, ensuring stakeholder buy-in and 99.9% service uptime.',
-      'Automated production rollouts using Dockerized microservices and CI/CD pipelines, reducing errors by 40% through robust monitoring.',
+      'Architected distributed service integrations to manage millions of daily real-time events with sub-100ms response times.',
+      'Engineered asynchronous tasks via Goroutines and RabbitMQ, decoupling business logic to ensure high-throughput reliability.',
+      'Executed performance profiling using pprof, identifying memory leaks and optimizing CPU utilization by 25% for core services.',
+      'Designed API Contract using gRPC/Protobuf contracts for strict type-safety and efficient communication across microservices.',
+      'Optimized database throughput via distributed caching, reducing redundant network calls and lowering latency by 40%.',
     ],
-    techStack: ['Salesforce', 'Mulesoft', 'LWC', 'Docker', 'CI/CD', 'Microservices'],
+    techStack: ['Go', 'Goroutines', 'RabbitMQ', 'gRPC', 'Protobuf', 'Redis', 'pprof'],
   },
   {
     title: 'Software Engineer',
@@ -75,13 +62,26 @@ const experience = [
     duration: 'Jan 2020 – Sep 2021',
     logo: deloitteLogo,
     responsibilities: [
-      'Enhanced Spring Microservice API performance by implementing caching and asynchronous processing, reducing response times by 66%.',
-      'Scaled ELK Stack from a single-server setup to a distributed architecture across 4 Google Cloud Platform (GCP) servers, significantly improving system reliability.',
-      'Optimized SQL query performance via targeted tuning, improving database response time by 35%.',
-      'Resolved 80+ backend issues and implemented 40+ feature enhancements, increasing customer satisfaction by 20%.',
-      'Engineered an asynchronous web crawler using Scrapy and multi-threading to identify broken links across 4 million pages with 95% accuracy.',
+      'Developed Java (Spring) microservices for enterprise management, ensuring 99.9% uptime for global operations.',
+      'Engineered Python data pipelines to automate usage tracking, processing unstructured logs into compliant reporting streams.',
+      'Implemented OAuth2 and JWT protocols, securing sensitive financial data and regulating cross-platform API access.',
+      'Optimized SQL query performance via advanced indexing, reducing data retrieval load times by 35% for production DBs.',
+      'Integrated OpenTelemetry to improve observability, significantly reducing Mean-Time-To-Resolution (MTTR) for incidents.',
     ],
-    techStack: ['Spring Boot', 'Java', 'ELK Stack', 'GCP', 'SQL', 'Scrapy'],
+    techStack: ['Java', 'Spring', 'Python', 'OAuth2', 'JWT', 'SQL', 'OpenTelemetry'],
+  },
+  {
+    title: 'Research Assistant',
+    company: 'San Jose State University',
+    location: 'San Jose, CA',
+    duration: 'Jan 2025 – May 2025',
+    logo: sjsuLogo,
+    responsibilities: [
+      'Architected Go-based MCP framework to standardize LLM tool-calling, automating complex academic API integrations.',
+      'Decoupled AI synthesis via Kafka event-driven architecture, eliminating system bottlenecks and improving data flow efficiency.',
+      'Scaled high-volume workloads via Docker-containerized workers to parallelize inference, slashing processing time by 70%.',
+    ],
+    techStack: ['Go', 'MCP', 'LLM', 'Kafka', 'Docker'],
   },
 ]
 </script>

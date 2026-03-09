@@ -50,15 +50,15 @@ const education = [
     location: 'San Jose, CA, USA',
     period: 'Jan 2024 - Dec 2025',
     gpa: '3.9 / 4.0',
-    coursework: 'Recommender Systems, Deep Learning, Natural Language Processing'
+    coursework: 'Distributed Systems, Deep Learning, Natural Language Processing, Recommender Systems'
   },
   {
-    degree: 'Bachelor of Engineering, Information Technology',
+    degree: 'Bachelor of Engineering, Computer Science',
     school: 'SGSITS Indore',
     location: 'Madhya Pradesh, India',
     period: 'Jul 2015 - May 2019',
     gpa: '3.8 / 4.0',
-    coursework: 'Data Structures and Algorithms, Operating Systems, Cloud Computing'
+    coursework: 'Data Structures, Operating Systems, Cloud Computing, Database Management'
   }
 ]
 </script>

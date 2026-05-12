@@ -37,12 +37,12 @@
 
 <script setup>
 const certifications = [
-  { name: 'CPQ and Billing Consultant Accredited Professional', link: 'https://www.credly.com/go/0Ptn4HGj' },
-  { name: 'Platform Developer II', link: 'https://sforce.co/verifycerts' },
-  { name: 'CPQ Specialist', link: 'https://sforce.co/verifycerts' },
-  { name: 'Sales Cloud Consultant', link: 'https://sforce.co/verifycerts' },  
-  { name: 'Platform Developer I', link: 'https://sforce.co/verifycerts' },
-  { name: 'Administrator', link: 'https://sforce.co/verifycerts' },
+  // { name: 'CPQ and Billing Consultant Accredited Professional', link: 'https://www.credly.com/go/0Ptn4HGj' },
+  // { name: 'Platform Developer II', link: 'https://sforce.co/verifycerts' },
+  // { name: 'CPQ Specialist', link: 'https://sforce.co/verifycerts' },
+  // { name: 'Sales Cloud Consultant', link: 'https://sforce.co/verifycerts' },  
+  // { name: 'Platform Developer I', link: 'https://sforce.co/verifycerts' },
+  // { name: 'Administrator', link: 'https://sforce.co/verifycerts' },
 ]
 </script>
 
